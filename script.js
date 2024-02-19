@@ -44,13 +44,9 @@ function discountAmountValue (discountValue){
       discountPrice.appendChild(p3);
 }
 
-
-
 function setInnerText(id, value) {
       document.getElementById(id).innerText = value;
 }
-
-
 
 couponCode.addEventListener("click", function(){
       const couponElement = document.getElementById('input-field').value;
@@ -93,23 +89,10 @@ for (const seat of seats) {
             // click and backgroundColor apply
             seat.style.backgroundColor = "#1DD100";
 
-            
-
-
-            
-            
-            
             // seat price here
             price = seatCount * 550;
             setInnerText('total-price', price);  
             setInnerText('grand-total', price);    
-                  
-            
-
-            
-
-
-            
 
             if(seatCount >=4){
                   couponCode.disabled = false;
@@ -118,9 +101,6 @@ for (const seat of seats) {
 
             // if(seatCount == 1 && )
             
-            
-            
-
             const seatAppend = document.getElementById('seat-append');
             // create a div element
             let div = document.createElement("div");
