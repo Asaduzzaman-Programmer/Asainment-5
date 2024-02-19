@@ -35,7 +35,6 @@ function discountAmountValue (discountValue){
       discountPrice.style.display = "flex";
       discountPrice.style.justifyContent = "space-between";
       discountPrice.style.marginBottom = "10px";
-
       const h3 = document.createElement('h3');
       const p3 = document.createElement('p');
       h3.innerText = "discount";
@@ -61,14 +60,12 @@ couponCode.addEventListener("click", function(){
             const grandPrice = (price - discountAmount).toFixed(2);
             setInnerText('grand-total', grandPrice);
             discountAmountValue(discountAmount);
-
       }
       else{
             alert("Please enter valid coupon code.");
       }
       
-      couponSection.hidden = true ;
-      
+      couponSection.hidden = true ; 
 })
 
 for (const seat of seats) {
@@ -98,7 +95,6 @@ for (const seat of seats) {
                   couponCode.disabled = false;
             }
              
-
             // if(seatCount == 1 && )
             
             const seatAppend = document.getElementById('seat-append');
@@ -126,7 +122,6 @@ for (const seat of seats) {
             setInnerText('seat-count', seatCount);
             setInnerText('seatAvilable', seatAvailable);
 
-
             numberElements.addEventListener('keyup', function(event){
                   const element = event.target.value.length;
                   
@@ -135,9 +130,7 @@ for (const seat of seats) {
       
                   }
             })
-
       }
-
       // Remove event listener after first click
       seat.removeEventListener('click', this);
 });
